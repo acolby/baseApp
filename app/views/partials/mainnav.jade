@@ -1,0 +1,12 @@
+.mainnav
+  .container
+    a.mainnav-toggle(data-toggle='collapse', data-target='.mainnav-collapse')
+      span.sr-only Toggle navigation
+      i.fa.fa-bars
+    nav.collapse.mainnav-collapse(role='navigation')
+      ul.mainnav-menu
+        li.dropdown(ng-class='{active: baseRoute == "whitelabeling"}')
+          a.dropdown-toggle(href='#/whitelabeling', data-toggle='dropdown', data-hover='dropdown')
+            i.fa.fa-image
+            | &nbsp; Home
+            
